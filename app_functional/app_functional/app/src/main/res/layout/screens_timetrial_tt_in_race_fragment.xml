@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9E9E9E"
+    android:visibility="visible"
+    android:layout_gravity="center_horizontal|top"
+    android:alpha="1"
+>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="16dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/inRaceFooter">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/inRaceInstruction"
+            android:text="Time trial about to begin."
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/inRaceInstruction"
+            android:layout_marginTop="16dp"
+            android:id="@+id/inRaceRunningFooter"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time"
+                android:id="@+id/textView56"
+                android:textColor="#ffffff"
+                android:alpha=".7"
+                android:textSize="14sp"
+                android:layout_centerHorizontal="true"
+                />
+            <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0:00"
+                android:id="@+id/raceTimeText"
+                android:textColor="#ffffff"
+                android:textSize="56sp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:minWidth="130dp"
+                android:layout_below="@+id/textView56"
+                android:layout_marginTop="16dp" />
+            <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="17.1 km"
+                android:textColor="#ffffff"
+                android:textSize="24sp"
+                android:layout_toLeftOf="@+id/raceTimeText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:gravity="center_horizontal"
+                android:layout_alignBaseline="@+id/raceTimeText"
+                android:id="@+id/distanceRemainingText" />
+            <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9"
+                android:textColor="#ffffff"
+                android:textSize="24sp"
+                android:layout_toRightOf="@+id/raceTimeText"
+                android:layout_alignBaseline="@+id/raceTimeText"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:gravity="center_horizontal"
+                android:id="@+id/checkpointsRemainingText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Checkpoints\nremaining"
+                android:id="@+id/textView57"
+                android:textColor="#ffffff"
+                android:alpha=".7"
+                android:textSize="14sp"
+                android:gravity="center_horizontal"
+                android:layout_toRightOf="@+id/raceTimeText"
+                android:layout_toEndOf="@+id/raceTimeText"
+                android:layout_alignTop="@+id/textView56"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Distance\nremaining"
+                android:id="@+id/textView58"
+                android:textColor="#ffffff"
+                android:alpha=".7"
+                android:textSize="14sp"
+                android:gravity="center_horizontal"
+                android:layout_toLeftOf="@+id/raceTimeText"
+                android:layout_toStartOf="@+id/raceTimeText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/textView56" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_below="@+id/inRaceInstruction"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:id="@+id/inRaceStopFooter">
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/inRouteStopBtnContainer"
+                android:layout_centerHorizontal="true">
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/inRaceStopProgress"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:max="500"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/circular_progress_btn" />
+                <ImageButton
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:src="@mipmap/ic_stop_race"
+                    android:background="@drawable/red_circle"
+                    android:scaleType="fitCenter"
+                    android:padding="12dp"
+                    android:id="@+id/inRouteStopBtn"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView59"
+                android:text="Tap race screen to resume."
+                android:textColor="#ffffff"
+                android:alpha=".7"
+                android:textSize="14sp"
+                android:layout_below="@+id/inRouteStopBtnContainer"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inRaceInstruction"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:id="@+id/inRaceStartFooter"
+            android:visibility="invisible">
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/inRouteStartBtnContainer"
+                android:layout_centerHorizontal="true">
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/inRaceStartProgress"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:max="500"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/circular_progress_btn" />
+                <ImageButton
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:src="@mipmap/ic_stop_race"
+                    android:background="@drawable/red_circle"
+                    android:scaleType="fitCenter"
+                    android:padding="12dp"
+                    android:id="@+id/inRouteStartBtn"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/inRouteStartBtnContainer"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:minHeight="56dp">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Countdown length"
+                        android:textColor="#ffffff"
+                        android:alpha=".7"
+                        android:textSize="14sp"
+                        android:gravity="center_horizontal"
+                        android:id="@+id/textView"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true" />
+                    <RelativeLayout
+                        android:layout_width="88dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/countdownLengthContainer">
+                        <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10s"
+                            android:textColor="#ffffff"
+                            android:textSize="24sp"
+                            android:gravity="center"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/countdownLengthText"
+                            android:layout_marginBottom="2dp" />
+                        <View
+                            android:layout_height="1dp"
+                            android:layout_width="match_parent"
+                            android:background="#FFFFFFFF"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignBottom="@+id/countdownLengthText"
+                            android:id="@+id/view5"
+                            android:alpha=".7" />
+                        <ImageView
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignBottom="@+id/countdownLengthText"
+                            android:src="@mipmap/ic_spinnner_triangle_white"
+                            android:layout_marginRight="-2dp"
+                            android:alpha=".7" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </FrameLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Just here to provide consistent layout."
+                android:textColor="#ffffff"
+                android:alpha=".7"
+                android:textSize="14sp"
+                android:layout_below="@+id/inRouteStartBtnContainer"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:visibility="invisible"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:visibility="gone"
+            android:layout_below="@+id/inRaceInstruction"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:id="@+id/inRaceCountdownFooter" >
+
+            <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/inRaceCountdownText"
+                android:text="10"
+                android:textSize="72sp"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-16dp"
+                android:textColor="#ffffff">
+
+            </njdsoftware.app_functional.CustomWidgets.CustomFontTextView>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    <ImageButton
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/race_cancel_background"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-4dp"
+        android:layout_marginRight="-4dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_close_white"
+        android:paddingRight="4dp"
+        android:paddingTop="4dp"
+        android:id="@+id/cancelRaceBtn"
+        android:visibility="visible" />
+
+</RelativeLayout>

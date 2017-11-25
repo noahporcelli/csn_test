@@ -1,0 +1,1121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/time_trial_fragment"
+    android:background="#9E9E9E">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mapFragment">
+
+    </FrameLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/createRouteStepsContainer">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top"
+            android:background="#212121"
+            android:id="@+id/step_1_large_container"
+            android:visibility="gone"
+            android:paddingTop="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp"
+            android:layout_below="@+id/horizStepsLayout">
+
+            <RelativeLayout
+                android:id="@+id/step"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@android:color/transparent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true">
+                <ImageView
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:src="@drawable/circle_bg"
+                    android:background="@android:color/transparent"/>
+                <TextView
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:textColor="#fff"
+                    android:text="1"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/s1steptextVert" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:text="Select start point"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+
+                android:textStyle="bold"
+                android:layout_alignTop="@+id/step"
+                android:layout_toRightOf="@+id/step"
+                android:layout_toEndOf="@+id/step"
+                android:id="@+id/s1PrimaryText"
+                android:layout_marginLeft="12dp"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tap point on map."
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+
+                android:id="@+id/s1Instruction"
+                android:layout_below="@+id/s1PrimaryText"
+                android:layout_alignLeft="@+id/s1PrimaryText"
+                android:layout_alignStart="@+id/s1PrimaryText"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="88dp"
+                android:layout_height="40dp"
+                android:text="CONFIRM"
+                android:id="@+id/btnConfirmStartPoint"
+                android:layout_below="@+id/s1Instruction"
+                android:layout_alignLeft="@+id/s1Instruction"
+                android:layout_alignStart="@+id/s1Instruction"
+                android:layout_marginLeft="-4dp"
+                android:layout_marginTop="4dp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:background="#212121"
+            android:paddingTop="16dp"
+            android:paddingLeft="16dp"
+            android:outlineProvider="paddedBounds"
+            android:id="@+id/step_2_large_container"
+            android:layout_below="@+id/step_1_large_container"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:visibility="gone"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout6"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@android:color/transparent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" >
+
+                <ImageView
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:src="@drawable/circle_bg"
+                    android:background="@android:color/transparent" />
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:textColor="#fff"
+                    android:text="2"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/s2steptextVert" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:text="Select finish point"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_alignTop="@+id/relativeLayout6"
+                android:layout_toRightOf="@+id/relativeLayout6"
+                android:layout_toEndOf="@+id/relativeLayout6"
+                android:id="@+id/s2PrimaryText"
+                android:layout_marginLeft="12dp"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tap point on map."
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:id="@+id/s2Instruction"
+                android:layout_below="@+id/s2PrimaryText"
+                android:layout_alignLeft="@+id/s2PrimaryText"
+                android:layout_alignStart="@+id/s2PrimaryText"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="8dp" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="88dp"
+                android:layout_height="40dp"
+                android:text="CONFIRM"
+                android:id="@+id/btnConfirmFinishPoint"
+                android:layout_below="@+id/s2Instruction"
+                android:layout_alignLeft="@+id/s2Instruction"
+                android:layout_alignStart="@+id/s2Instruction"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="-4dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:background="#212121"
+            android:paddingTop="16dp"
+            android:paddingLeft="16dp"
+            android:outlineProvider="paddedBounds"
+            android:id="@+id/step_3_large_container"
+            android:layout_below="@+id/step_2_large_container"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:visibility="gone"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:padding="0dp"
+                android:background="@android:color/transparent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" >
+
+                <ImageView
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:src="@drawable/circle_bg"
+                    android:background="@android:color/transparent" />
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:textColor="#fff"
+                    android:text="3"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/s3steptextVert" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:text="Add checkpoints?"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+
+                android:textStyle="bold"
+                android:layout_alignTop="@+id/relativeLayout2"
+                android:layout_toRightOf="@+id/relativeLayout2"
+                android:layout_toEndOf="@+id/relativeLayout2"
+                android:id="@+id/s3PrimaryText"
+                android:layout_marginLeft="12dp"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Up to 10 locations that must be passed on route."
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+
+                android:id="@+id/s3Instruction1"
+                android:layout_below="@+id/s3PrimaryText"
+                android:layout_alignLeft="@+id/s3PrimaryText"
+                android:layout_alignStart="@+id/s3PrimaryText"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="88dp"
+                android:layout_height="40dp"
+                android:text="YES"
+                android:id="@+id/btnYesAddCheckpoints"
+                android:layout_alignLeft="@+id/s3Instruction1"
+                android:layout_alignStart="@+id/s3Instruction1"
+                android:layout_marginLeft="-4dp"
+                android:layout_alignParentBottom="false"
+                android:minWidth="88dp"
+                android:layout_below="@+id/s3Instruction1"
+                android:layout_marginTop="4dp" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="88dp"
+                android:layout_height="40dp"
+                android:text="NO"
+                android:id="@+id/btnNoAddCheckpoints"
+                android:minWidth="88dp"
+                android:layout_alignBottom="@+id/btnYesAddCheckpoints"
+                android:layout_toRightOf="@+id/s3PrimaryText"
+                android:layout_toEndOf="@+id/s3PrimaryText" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="5"
+                android:id="@+id/checkpointRow1"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/btnYesAddCheckpoints"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="4dp">
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent">
+                    <RelativeLayout
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:background="@android:color/transparent">
+                        <ImageView
+                            android:layout_height="40dp"
+                            android:layout_width="40dp"
+                            android:padding="8dp"
+                            android:src="@drawable/circle_checkpoint"
+                            android:background="@android:color/transparent"
+                            android:layout_centerInParent="true"/>
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textColor="#fff"
+                            android:text="1"
+                            android:textSize="12sp"
+                            android:layout_centerInParent="true"
+                            android:gravity="center" />
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent">
+                    <RelativeLayout
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:background="@android:color/transparent">
+                        <ImageView
+                            android:layout_height="40dp"
+                            android:layout_width="40dp"
+                            android:padding="8dp"
+                            android:src="@drawable/circle_checkpoint"
+                            android:background="@android:color/transparent"
+                            android:layout_centerInParent="true"/>
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textColor="#fff"
+                            android:text="2"
+                            android:textSize="12sp"
+                            android:layout_centerInParent="true"
+                            android:gravity="center" />
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent">
+                    <RelativeLayout
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:background="@android:color/transparent">
+                        <ImageView
+                            android:layout_height="40dp"
+                            android:layout_width="40dp"
+                            android:padding="8dp"
+                            android:src="@drawable/circle_checkpoint"
+                            android:background="@android:color/transparent"
+                            android:layout_centerInParent="true"/>
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textColor="#fff"
+                            android:text="3"
+                            android:textSize="12sp"
+                            android:layout_centerInParent="true"
+                            android:gravity="center" />
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent">
+                    <RelativeLayout
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:background="@android:color/transparent">
+                        <ImageView
+                            android:layout_height="40dp"
+                            android:layout_width="40dp"
+                            android:padding="8dp"
+                            android:src="@drawable/circle_checkpoint"
+                            android:background="@android:color/transparent"
+                            android:layout_centerInParent="true"/>
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textColor="#fff"
+                            android:text="4"
+                            android:textSize="12sp"
+                            android:layout_centerInParent="true"
+                            android:gravity="center" />
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent">
+                    <RelativeLayout
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:background="@android:color/transparent">
+                        <ImageView
+                            android:layout_height="40dp"
+                            android:layout_width="40dp"
+                            android:padding="8dp"
+                            android:src="@drawable/circle_checkpoint"
+                            android:background="@android:color/transparent"
+                            android:layout_centerInParent="true"/>
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textColor="#fff"
+                            android:text="5"
+                            android:textSize="12sp"
+                            android:layout_centerInParent="true"
+                            android:gravity="center" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tap point on map."
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:id="@+id/s3Instruction2"
+                android:layout_below="@+id/checkpointRow2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="5"
+                android:id="@+id/checkpointRow2"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:layout_below="@+id/checkpointRow1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent" >
+
+                    <RelativeLayout
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:background="@android:color/transparent" >
+
+                        <ImageView
+                            android:layout_height="40dp"
+                            android:layout_width="40dp"
+                            android:padding="8dp"
+                            android:src="@drawable/circle_checkpoint"
+                            android:background="@android:color/transparent"
+                            android:layout_centerInParent="true" />
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textColor="#fff"
+                            android:text="6"
+                            android:textSize="12sp"
+                            android:layout_centerInParent="true"
+                            android:gravity="center" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent" >
+
+                    <RelativeLayout
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:background="@android:color/transparent" >
+
+                        <ImageView
+                            android:layout_height="40dp"
+                            android:layout_width="40dp"
+                            android:padding="8dp"
+                            android:src="@drawable/circle_checkpoint"
+                            android:background="@android:color/transparent"
+                            android:layout_centerInParent="true" />
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textColor="#fff"
+                            android:text="7"
+                            android:textSize="12sp"
+                            android:layout_centerInParent="true"
+                            android:gravity="center" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent" >
+
+                    <RelativeLayout
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:background="@android:color/transparent" >
+
+                        <ImageView
+                            android:layout_height="40dp"
+                            android:layout_width="40dp"
+                            android:padding="8dp"
+                            android:src="@drawable/circle_checkpoint"
+                            android:background="@android:color/transparent"
+                            android:layout_centerInParent="true" />
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textColor="#fff"
+                            android:text="8"
+                            android:textSize="12sp"
+                            android:layout_centerInParent="true"
+                            android:gravity="center" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent" >
+
+                    <RelativeLayout
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:background="@android:color/transparent" >
+
+                        <ImageView
+                            android:layout_height="40dp"
+                            android:layout_width="40dp"
+                            android:padding="8dp"
+                            android:src="@drawable/circle_checkpoint"
+                            android:background="@android:color/transparent"
+                            android:layout_centerInParent="true" />
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textColor="#fff"
+                            android:text="9"
+                            android:textSize="12sp"
+                            android:layout_centerInParent="true"
+                            android:gravity="center" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent" >
+
+                    <RelativeLayout
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:background="@android:color/transparent" >
+
+                        <ImageView
+                            android:layout_height="40dp"
+                            android:layout_width="40dp"
+                            android:padding="8dp"
+                            android:src="@drawable/circle_checkpoint"
+                            android:background="@android:color/transparent"
+                            android:layout_centerInParent="true" />
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textColor="#fff"
+                            android:text="10"
+                            android:textSize="12sp"
+                            android:layout_centerInParent="true"
+                            android:gravity="center" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/s3CheckpointButtons"
+                android:visibility="visible"
+                android:layout_below="@+id/s3Instruction2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp">
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="88dp"
+                    android:layout_height="40dp"
+                    android:text="REMOVE"
+                    android:id="@+id/btnRemoveCheckpoint"
+                    android:layout_alignParentBottom="false"
+                    android:minWidth="88dp"
+                    android:layout_alignParentRight="false"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="12dp" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="88dp"
+                    android:layout_height="40dp"
+                    android:text="CONFIRM"
+                    android:id="@+id/btnConfirmCheckpoint"
+                    android:minWidth="88dp"
+                    android:layout_toRightOf="@+id/btnRemoveCheckpoint"
+                    android:layout_marginLeft="12dp" />
+            </RelativeLayout>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="CONFIRM SELECTION"
+                android:id="@+id/btnConfirmCheckpoints"
+                android:minWidth="88dp"
+                android:visibility="visible"
+                android:layout_below="@+id/s3CheckpointButtons"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:paddingTop="16dp"
+            android:paddingLeft="16dp"
+            android:outlineProvider="paddedBounds"
+            android:id="@+id/step_4_large_container"
+            android:layout_below="@+id/step_3_large_container"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:visibility="gone"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@android:color/transparent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" >
+
+                <ImageView
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:src="@drawable/circle_bg"
+                    android:background="@android:color/transparent" />
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:textColor="#fff"
+                    android:text="4"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/s4steptextVert" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:text="Name route"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_alignTop="@+id/relativeLayout"
+                android:layout_toRightOf="@+id/relativeLayout"
+                android:layout_toEndOf="@+id/relativeLayout"
+                android:id="@+id/s4PrimaryText"
+                android:layout_marginLeft="12dp"
+                android:gravity="center_vertical" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="88dp"
+                android:layout_height="40dp"
+                android:text="CONFIRM"
+                android:id="@+id/btnConfirmRouteName"
+                android:layout_below="@+id/s4EditText"
+                android:layout_alignLeft="@+id/s4EditText"
+                android:layout_alignStart="@+id/s4EditText" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/s4EditText"
+                android:textSize="16sp"
+                android:text="SLFC Westbury GP"
+                android:textColor="#ffffff"
+                android:inputType="textNoSuggestions"
+                android:theme="@style/EditTextTheme"
+                android:focusableInTouchMode="false"
+                android:clickable="false"
+                android:layout_below="@+id/s4PrimaryText"
+                android:layout_alignLeft="@+id/s4PrimaryText"
+                android:layout_alignStart="@+id/s4PrimaryText"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="8dp"
+                android:paddingTop="0dp"
+                android:layout_marginBottom="4dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:outlineProvider="paddedBounds"
+            android:id="@+id/step_5_large_container"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:visibility="gone"
+            android:layout_below="@+id/step_4_large_container"
+            android:padding="16dp">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="PREVIEW RACE"
+                android:id="@+id/btnPreviewCreatedRoute"
+                android:minWidth="88dp"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:id="@+id/horizStepsLayout"
+            android:visibility="gone"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:id="@+id/linearLayout3"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="56dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="6dp"
+                    android:paddingTop="6dp"
+                    android:id="@+id/step1Horiz"
+                    android:clickable="false">
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout18"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:padding="0dp"
+                        android:background="@android:color/transparent"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:clickable="false">
+
+                        <ImageView
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:src="@drawable/circle_bg"
+                            android:padding="12dp"
+                            android:background="@android:color/transparent"
+                            android:clickable="false" />
+
+                        <TextView
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:id="@+id/s1steptextHoriz"
+                            android:textColor="#fff"
+                            android:text="1"
+                            android:textSize="12sp"
+                            android:gravity="center"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="88dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:text="Start point"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:layout_below="@+id/relativeLayout18"
+                        android:layout_marginBottom="12dp"
+                        android:clickable="false" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="6dp"
+                    android:paddingTop="6dp"
+                    android:id="@+id/step2Horiz"
+                    android:clickable="false">
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout18"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:padding="0dp"
+                        android:background="@android:color/transparent"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true">
+
+                        <ImageView
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:src="@drawable/circle_bg"
+                            android:padding="12dp"
+                            android:background="@android:color/transparent"
+                            android:clickable="false" />
+
+                        <TextView
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:id="@+id/s2steptextHoriz"
+                            android:textColor="#fff"
+                            android:text="2"
+                            android:textSize="12sp"
+                            android:gravity="center"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="88dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:text="Finish point"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:layout_below="@+id/relativeLayout18"
+                        android:layout_marginBottom="12dp" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="6dp"
+                    android:paddingTop="6dp"
+                    android:id="@+id/step3Horiz"
+                    android:clickable="false">
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout18"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:padding="0dp"
+                        android:background="@android:color/transparent"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true">
+
+                        <ImageView
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:src="@drawable/circle_bg"
+                            android:padding="12dp"
+                            android:background="@android:color/transparent"
+                            android:clickable="false" />
+
+                        <TextView
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:id="@+id/s3steptextHoriz"
+                            android:textColor="#fff"
+                            android:text="3"
+                            android:textSize="12sp"
+                            android:gravity="center"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="88dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:text="10 checkpoints"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:layout_below="@+id/relativeLayout18"
+                        android:layout_marginBottom="12dp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="12dp"
+        android:paddingTop="12dp"
+        android:background="@drawable/scrim_route_info"
+        android:id="@+id/relativeLayout20"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Portway Grand Prix"
+            android:id="@+id/textView39"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Distance:"
+            android:id="@+id/textView40"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_below="@+id/textView39"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="16dp"
+            android:alpha=".7" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10.9 km"
+            android:id="@+id/textView41"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_alignTop="@+id/textView40"
+            android:layout_toRightOf="@+id/textView40"
+            android:layout_toEndOf="@+id/textView40"
+            android:layout_marginLeft="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Record:"
+            android:id="@+id/textView42"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_below="@+id/textView40"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="16dp"
+            android:alpha=".7" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5m 23s"
+            android:id="@+id/textView43"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_alignTop="@+id/textView42"
+            android:layout_toRightOf="@+id/textView42"
+            android:layout_toEndOf="@+id/textView42"
+            android:layout_marginLeft="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PB:"
+            android:id="@+id/textView44"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_below="@+id/textView42"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="16dp"
+            android:alpha=".7" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5m 37s"
+            android:id="@+id/textView45"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_alignTop="@+id/textView44"
+            android:layout_toRightOf="@+id/textView44"
+            android:layout_toEndOf="@+id/textView44"
+            android:layout_marginLeft="16dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/preview_bottom_btn_container"
+        android:visibility="gone">
+
+        <njdsoftware.app_functional.CustomWidgets.TextButton
+            android:layout_width="200dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginStart="-5dp"
+            android:layout_marginRight="-5dp"
+            android:layout_marginEnd="-5dp"
+            android:layout_marginBottom="-7dp"
+            android:text="STATS"
+            android:layout_weight="1"
+            android:background="#2962FF"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:id="@+id/btnRouteStats" />
+
+        <njdsoftware.app_functional.CustomWidgets.TextButton
+            android:layout_width="200dp"
+            android:layout_height="90dp"
+            android:layout_marginRight="-5dp"
+            android:layout_marginEnd="-5dp"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginStart="-5dp"
+            android:layout_marginBottom="-7dp"
+            android:text="RACE"
+            android:layout_weight="1"
+            android:background="#2962FF"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:id="@+id/btnRace" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout11"
+        android:visibility="gone">
+
+        <njdsoftware.app_functional.CustomWidgets.TextButton
+            android:layout_width="200dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginStart="-5dp"
+            android:layout_marginRight="-5dp"
+            android:layout_marginEnd="-5dp"
+            android:layout_marginBottom="-7dp"
+            android:text="EDIT"
+            android:layout_weight="1"
+            android:background="#2962FF"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <njdsoftware.app_functional.CustomWidgets.TextButton
+            android:layout_width="200dp"
+            android:layout_height="90dp"
+            android:layout_marginRight="-5dp"
+            android:layout_marginEnd="-5dp"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginStart="-5dp"
+            android:layout_marginBottom="-7dp"
+            android:text="CONFIRM"
+            android:layout_weight="1"
+            android:background="#2962FF"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <njdsoftware.app_functional.CustomWidgets.TextButton
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:text="Navigate map to find races near you.\n\n Or make your own."
+        android:layout_alignParentBottom="true"
+        android:background="#2962FF"
+        android:textColor="#ffffff"
+        android:visibility="gone"
+        android:id="@+id/TT_hint_text" />
+
+    <include
+        layout="@layout/screens_timetrial_tt_in_race_fragment"
+        android:id="@+id/inRaceOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        />
+</RelativeLayout>

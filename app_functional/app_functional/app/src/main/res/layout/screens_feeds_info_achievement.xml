@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="36dp"
+    android:paddingRight="36dp"
+    android:paddingBottom="16dp"
+    android:background="#212121" >
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@mipmap/ic_trophy"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="To achieve, you must believe"
+        android:textSize="14sp"
+        android:id="@+id/textView14"
+
+        android:layout_alignTop="@+id/imageView"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="2dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="13sp"
+        android:id="@+id/textView19"
+        android:alpha=".7"
+        android:text="Lose 5 challenges in a row."
+
+        android:layout_below="@+id/textView14"
+        android:layout_alignLeft="@+id/textView14"
+        android:layout_alignStart="@+id/textView14"
+        android:layout_marginTop="4dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="4dp"
+        android:paddingBottom="4dp"
+        android:paddingLeft="4dp"
+        android:id="@+id/btnAccept"
+        android:clickable="true"
+        android:layout_below="@+id/textView19"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/imageButton2"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_stats"
+            android:background="@null"
+            android:cropToPadding="true"
+            android:adjustViewBounds="false"
+            android:scaleType="fitXY" />
+
+        <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+            android:layout_width="98dp"
+            android:layout_height="36dp"
+            android:textColor="#DADADA"
+            android:textSize="12sp"
+            android:text="COMPARE ACHIEVEMENTS"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/imageButton2"
+            android:layout_marginTop="-8dp"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="13sp"
+        android:id="@+id/textView12"
+        android:alpha=".7"
+        android:text="ash9888 achv count"
+        android:layout_below="@+id/textView19"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="24dp"
+        android:layout_toLeftOf="@+id/textView9" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="33"
+        android:textSize="13sp"
+        android:id="@+id/textView9"
+        android:layout_alignTop="@+id/textView12"
+        android:layout_toLeftOf="@+id/btnAccept"
+        android:layout_toStartOf="@+id/btnAccept"
+        android:layout_marginRight="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="17"
+        android:textSize="13sp"
+        android:id="@+id/textView34"
+        android:layout_below="@+id/textView12"
+        android:layout_alignRight="@+id/textView9"
+        android:layout_alignEnd="@+id/textView9"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="13sp"
+        android:id="@+id/textView35"
+        android:alpha=".7"
+        android:text="My achv count"
+        android:layout_alignTop="@+id/textView34"
+        android:layout_toLeftOf="@+id/textView34"
+        android:layout_toStartOf="@+id/textView34"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="13sp"
+        android:id="@+id/textView36"
+        android:text="You have not unlocked this achievement."
+        android:layout_below="@+id/btnAccept"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+
+</RelativeLayout>

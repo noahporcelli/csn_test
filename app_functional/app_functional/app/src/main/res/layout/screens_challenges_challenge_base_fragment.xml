@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#dadada">
+    <njdsoftware.app_functional.CustomWidgets.TextButton
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#2962FF"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="MY CHALLENGES"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="24dp"
+        android:id="@+id/view2" />
+
+    <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NEW"
+        android:textSize="16sp"
+        android:translationZ="2dp"
+        android:textColor="#ffffff"
+        android:layout_marginRight="51dp"
+        android:layout_marginEnd="51dp"
+        android:layout_alignBaseline="@+id/view2"
+        android:layout_alignBottom="@+id/relativeLayout40"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout40"
+        android:background="#212121"
+        android:padding="16dp">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/relativeLayout41">
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/circular_button_80dp"
+                android:src="@drawable/ic_stats_black"
+                android:scaleType="fitCenter"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="0dp"
+                android:paddingBottom="20dp"
+                android:id="@+id/imageButton9" />
+            <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:text="RANKINGS"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="48dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rating"
+                android:id="@+id/textView91"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:alpha=".7" />
+
+            <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2403"
+                android:id="@+id/textView90"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:layout_alignTop="@+id/textView91"
+                android:layout_toRightOf="@+id/textView91"
+                android:layout_toEndOf="@+id/textView91"
+                android:layout_marginLeft="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rank"
+                android:id="@+id/textView92"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:alpha=".7"
+                android:layout_alignTop="@+id/textView90"
+                android:layout_toRightOf="@+id/textView90"
+                android:layout_toEndOf="@+id/textView90"
+                android:layout_marginLeft="32dp" />
+
+            <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12,745"
+                android:id="@+id/textView93"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:layout_alignTop="@+id/textView92"
+                android:layout_toRightOf="@+id/textView92"
+                android:layout_toEndOf="@+id/textView92"
+                android:layout_marginLeft="16dp" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/relativeLayout42"
+                android:layout_toStartOf="@+id/relativeLayout42">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Played"
+                    android:id="@+id/textView94"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:allowUndo="false"
+                    android:alpha=".7"
+                    android:layout_centerHorizontal="true" />
+
+                <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="121"
+                    android:id="@+id/textView95"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:allowUndo="false"
+                    android:layout_below="@+id/textView94"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/relativeLayout42"
+                android:layout_marginLeft="48dp"
+                android:layout_marginRight="48dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Won"
+                    android:id="@+id/textView96"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:allowUndo="false"
+                    android:alpha=".7"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerHorizontal="true" />
+
+                <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="75"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:id="@+id/view11"
+                    android:layout_below="@+id/textView96"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/relativeLayout42"
+                android:layout_toEndOf="@+id/relativeLayout42">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lost"
+                    android:id="@+id/textView97"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:allowUndo="false"
+                    android:alpha=".7"
+                    android:layout_centerHorizontal="true" />
+
+                <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="46"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:layout_below="@+id/textView97"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,4 @@
+#Sun Nov 19 00:00:03 GMT 2017
+base.0=C\:\\CSN tingz\\app_functional\\app_functional\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+renamed.0=classes.dex
+file.0=C\:\\CSN tingz\\app_functional\\app_functional\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0\\classes.dex

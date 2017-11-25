@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="52dp"
+    android:background="@android:color/transparent"
+    android:paddingTop="8dp"
+    android:paddingBottom="4dp">
+    <View android:layout_height="1dp" android:layout_width="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff"
+        android:alpha=".24"
+        android:id="@+id/div_right_line"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_toLeftOf="@+id/div_right_line"
+        android:layout_toStartOf="@+id/div_right_line"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:id="@+id/interaction_container"
+        android:gravity="center_vertical"
+        android:clickable="true">
+        <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/requests_toggle_text"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:text="Received"
+            android:allowUndo="false" />
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:id="@+id/img_requests_dropdown"
+            android:src="@mipmap/ic_dropdown_white"
+            android:layout_marginLeft="8dp" />
+    </LinearLayout>
+    <View android:layout_height="1dp" android:layout_width="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/interaction_container"
+        android:layout_toStartOf="@+id/interaction_container"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff"
+        android:alpha=".24" />
+</RelativeLayout>

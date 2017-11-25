@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121">
+    <njdsoftware.app_functional.CustomWidgets.TextButton
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#2962FF"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="HEAD-TO-HEAD"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="24dp"
+        android:id="@+id/view2" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view2"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/relativeLayout51">
+        <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/gap1"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:gravity="bottom|center_horizontal" />
+        <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:gravity="bottom|center|center_horizontal"
+            android:textColor="#00ff00"
+            android:textSize="13sp"
+            android:text="njdzxx"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/gap1"
+            android:layout_toStartOf="@+id/gap1"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp" />
+        <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:gravity="bottom|center|center_horizontal"
+            android:textColor="#00ff00"
+            android:textSize="13sp"
+            android:text="ash9888"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/gap1"
+            android:layout_toEndOf="@+id/gap1"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp" />
+    </RelativeLayout>
+    <View android:layout_height="1dp" android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:alpha=".5"
+        android:layout_below="@+id/relativeLayout51"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/view12" />
+    <include
+        layout="@layout/common_divider_h2h"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view12"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/include12" />
+    <include
+        layout="@layout/screens_h2h_h2h_subheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include12"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/include13" />
+    <include
+        layout="@layout/screens_h2h_h2h_stats_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include13"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/include14" />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:background="#212121"
+        android:paddingBottom="2dp"
+        android:layout_below="@+id/include14"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout53">
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/stat_info"
+            android:textColor="#ffffff"
+            android:alpha="0.7"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:text="Mutual"
+            android:layout_centerHorizontal="true" />
+        <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/stat_info"
+            android:layout_toStartOf="@+id/stat_info"
+            android:id="@+id/stat_p1"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:text="31"
+            />
+        <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/stat_info"
+            android:layout_toEndOf="@+id/stat_info"
+            android:id="@+id/stat_p2"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:text="11"
+            />
+    </RelativeLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:background="#212121"
+        android:paddingBottom="2dp"
+        android:layout_below="@+id/relativeLayout53"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout54">
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/stat_info"
+            android:textColor="#ffffff"
+            android:alpha="0.7"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:text="Mutual wins"
+            android:layout_centerHorizontal="true" />
+        <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/stat_info"
+            android:layout_toStartOf="@+id/stat_info"
+            android:id="@+id/stat_p1"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:text="19"
+            />
+        <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/stat_info"
+            android:layout_toEndOf="@+id/stat_info"
+            android:id="@+id/stat_p2"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:text="121"
+            />
+    </RelativeLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:background="#212121"
+        android:paddingBottom="2dp"
+        android:layout_below="@+id/relativeLayout54"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout55">
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/stat_info"
+            android:textColor="#ffffff"
+            android:alpha="0.7"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:text="Mutual losses"
+            android:layout_centerHorizontal="true" />
+        <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/stat_info"
+            android:layout_toStartOf="@+id/stat_info"
+            android:id="@+id/stat_p1"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:text="21"
+            />
+        <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/stat_info"
+            android:layout_toEndOf="@+id/stat_info"
+            android:id="@+id/stat_p2"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:text="11"
+            />
+    </RelativeLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:background="#212121"
+        android:paddingBottom="2dp"
+        android:layout_below="@+id/relativeLayout55"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/stat_info"
+            android:textColor="#ffffff"
+            android:alpha="0.7"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:text="Mutual draws"
+            android:layout_centerHorizontal="true" />
+        <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/stat_info"
+            android:layout_toStartOf="@+id/stat_info"
+            android:id="@+id/stat_p1"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:text="7"
+            />
+        <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/stat_info"
+            android:layout_toEndOf="@+id/stat_info"
+            android:id="@+id/stat_p2"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:text="4"
+            />
+    </RelativeLayout>
+</RelativeLayout>

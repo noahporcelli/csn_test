@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">app_functional</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="user_2"><u>ash9888</u></string>
+    <string name="full_h2h"><u>Full H2H</u></string>
+    <string-array name="country_arrays">
+        <item>Malaysia</item>
+        <item>United States</item>
+        <item>Indonesia</item>
+        <item>France</item>
+        <item>Italy</item>
+        <item>Singapore</item>
+        <item>New Zealand</item>
+        <item>India</item>
+    </string-array>
+    <string-array name="countdown_lengths_array">
+        <item>3 s</item>
+        <item>5s</item>
+        <item>Array Item Three</item>
+    </string-array>
+</resources>

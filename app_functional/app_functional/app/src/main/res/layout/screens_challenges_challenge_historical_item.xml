@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="#212121">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:id="@+id/relativeLayout22"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/imageView8"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@mipmap/ic_challenge"
+            android:padding="6dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ndzxx don&apos;t 4get date"
+            android:id="@+id/textView98"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView8"
+            android:layout_toEndOf="@+id/imageView8"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:layout_marginLeft="4dp" />
+
+        <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:id="@+id/textView99"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:layout_alignTop="@+id/textView100"
+            android:layout_toLeftOf="@+id/textView100"
+            android:layout_toStartOf="@+id/textView100"
+            android:layout_marginRight="16dp"
+            android:minWidth="40dp"
+            android:gravity="center_horizontal|right" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\u25bc28"
+            android:id="@+id/textView100"
+            android:textColor="#ef5350"
+            android:textSize="13sp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/textView101"
+            android:layout_toStartOf="@+id/textView101"
+            android:minWidth="40dp"
+            android:gravity="right"
+            android:layout_marginRight="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1926"
+            android:id="@+id/textView101"
+            android:textColor="#ef5350"
+            android:textSize="13sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="16dp"
+            android:minWidth="40dp"
+            android:gravity="right" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayout22"
+        android:visibility="visible">
+        <include
+            layout="@layout/screens_feeds_info_challenge_historical"
+            android:id="@+id/challenge_more_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

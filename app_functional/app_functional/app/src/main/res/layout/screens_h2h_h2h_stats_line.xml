@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#212121"
+    android:paddingBottom="2dp">
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/stat_info"
+        android:textColor="#ffffff"
+        android:alpha="0.7"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:text="Total"
+        android:layout_centerHorizontal="true" />
+    <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/stat_info"
+        android:layout_toStartOf="@+id/stat_info"
+        android:id="@+id/stat_p1"
+        android:textColor="#ffffff"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:text="54"
+        />
+    <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/stat_info"
+        android:layout_toEndOf="@+id/stat_info"
+        android:id="@+id/stat_p2"
+        android:textColor="#ffffff"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:text="31"
+        />
+</RelativeLayout>

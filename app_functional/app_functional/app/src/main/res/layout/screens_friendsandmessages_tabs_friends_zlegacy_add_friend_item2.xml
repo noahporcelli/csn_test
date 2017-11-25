@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#212121"
+    android:focusable="false"
+    android:focusableInTouchMode="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingTop="12dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="12dp"
+        android:id="@+id/permanent_section_view"
+        android:clickable="true"
+        android:focusableInTouchMode="false"
+        android:focusable="false">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_pic_view"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_add_friend"
+            app:civ_fill_color="#F5F5F5"
+            app:civ_border_width="1dp"
+            app:civ_border_color="#FF000000"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add friend"
+            android:id="@+id/user_name_view"
+            android:layout_alignTop="@+id/user_pic_view"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="56dp"
+
+            android:textSize="14sp"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_bio_view"
+            android:layout_below="@+id/user_name_view"
+            android:layout_alignLeft="@+id/user_name_view"
+            android:layout_alignStart="@+id/user_name_view"
+
+            android:textSize="13sp"
+            android:textColor="#ffffff"
+            android:alpha="0.7"
+            android:minLines="2"
+            android:text="Enter username." />
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/expandable_section_view">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="8dp"
+            android:id="@+id/username_container">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:id="@+id/textView11"
+                android:textColor="#ffffff"
+
+                android:textSize="12sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="20dp"
+                android:alpha=".7"
+                android:layout_marginRight="16dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/username_edit_text"
+                android:layout_toRightOf="@+id/textView11"
+                android:layout_toEndOf="@+id/textView11"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textSize="16sp"
+                android:textColor="#ffffff"
+                android:paddingTop="0dp"
+                android:inputType="textNoSuggestions"
+                android:theme="@style/EditTextTheme"
+                android:focusableInTouchMode="false"
+                android:text="fsaf"
+                android:clickable="false" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="8dp"
+            android:id="@+id/error_container">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:id="@+id/textView119"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="20dp"
+                android:alpha=".7"
+                android:layout_marginRight="16dp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/textView119"
+                android:layout_toEndOf="@+id/textView119"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textSize="14sp"
+                android:text="User does not exist."
+                android:textColor="#ef5350"
+                android:paddingTop="0dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="8dp"
+            android:id="@+id/message_container">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:id="@+id/textView119"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="20dp"
+                android:alpha=".7"
+                android:layout_marginRight="16dp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/textView119"
+                android:layout_toEndOf="@+id/textView119"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textSize="14sp"
+                android:text="Already friends."
+                android:textColor="#00ff00"
+                android:paddingTop="0dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="8dp"
+            android:id="@+id/loader_container">
+            <com.github.rahatarmanahmed.cpv.CircularProgressView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/progress_view"
+                android:layout_width="24dp"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                app:cpv_thickness="2dp"
+                app:cpv_animAutostart="true"
+                app:cpv_indeterminate="true"
+                app:cpv_color="#00B0FF"
+                android:paddingBottom="8dp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ffffff"
+            android:alpha="0.5"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="48dp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="4dp"
+                android:paddingLeft="4dp"
+                android:id="@+id/btnAccept"
+                android:layout_centerInParent="true"
+                android:clickable="true">
+                <ImageButton
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:id="@+id/imageButton2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/ic_tick"
+                    android:background="@null"
+                    android:clickable="false" />
+
+                <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+                    android:layout_width="90dp"
+                    android:layout_height="24dp"
+                    android:textColor="#DADADA"
+                    android:textSize="12sp"
+                    android:text="ADD"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/imageButton2"
+                    android:layout_marginTop="-8dp"
+                    android:gravity="center"
+                    android:clickable="false" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="4dp"
+                android:paddingLeft="4dp"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/btnAccept"
+                android:layout_toStartOf="@+id/btnAccept"
+                android:id="@+id/viewProfileButton"
+                android:clickable="true">
+                <ImageButton
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:id="@+id/messageButton"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/ic_profile"
+                    android:background="@null"
+                    android:clickable="false" />
+
+                <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+                    android:layout_width="90dp"
+                    android:layout_height="24dp"
+                    android:textColor="#DADADA"
+                    android:textSize="12sp"
+                    android:text="VIEW PROFILE"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/messageButton"
+                    android:layout_marginTop="-8dp"
+                    android:gravity="center"
+                    android:clickable="false" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="4dp"
+                android:paddingLeft="4dp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/btnAccept"
+                android:id="@+id/cancelAddButton"
+                android:clickable="true">
+                <ImageButton
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:id="@+id/imageButton4"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/ic_remove_friend"
+                    android:background="@null"
+                    android:clickable="false" />
+
+                <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+                    android:layout_width="90dp"
+                    android:layout_height="24dp"
+                    android:textColor="#DADADA"
+                    android:textSize="12sp"
+                    android:text="CANCEL"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/imageButton4"
+                    android:layout_marginTop="-8dp"
+                    android:gravity="center"
+                    android:clickable="false" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffffff"
+        android:alpha=".12"
+        android:id="@+id/end_divider_view" />
+
+</LinearLayout>

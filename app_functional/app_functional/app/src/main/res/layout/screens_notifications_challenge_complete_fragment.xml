@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/time_trial_fragment"
+    android:background="#9E9E9E">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right|center_vertical"
+        android:alpha="1"
+        android:background="#212121">
+
+        <njdsoftware.app_functional.CustomWidgets.TextButton
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="#2962FF"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="Menu"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="24dp"
+            android:id="@+id/view2" />
+
+        <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Challenge finished"
+            android:id="@+id/textView46"
+            android:textColor="#ffffff"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/view2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout21"
+            android:layout_below="@+id/textView115"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="12dp">
+
+            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                android:layout_width="220dp"
+                android:layout_height="15dp"
+                app:rcProgress="75"
+                app:rcMax="100"
+                android:id="@+id/progressBar"
+                app:rcRadius="10dp"
+                app:rcBackgroundPadding="2dp"
+                app:rcReverse="false"
+                app:rcProgressColor="@color/colorPrimary"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="2"
+                android:id="@+id/s1PrimaryText"
+                android:layout_alignTop="@+id/s3Instruction2"
+                android:layout_toLeftOf="@+id/progressBar"
+                android:layout_toStartOf="@+id/progressBar"
+                android:paddingRight="6dp"
+                android:paddingEnd="6dp"
+                android:paddingLeft="6dp"
+                android:paddingStart="6dp"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="3"
+                android:id="@+id/s3Instruction2"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/progressBar"
+                android:layout_toEndOf="@+id/progressBar"
+                android:paddingLeft="6dp"
+                android:paddingStart="6dp"
+                android:paddingRight="6dp"
+                android:paddingEnd="6dp"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:id="@+id/textView55"
+            android:background="#ffffff"
+            android:alpha=".95"
+            android:textColor="#000000"
+            android:hint="Enter feed comment here."
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/textView46"
+            android:layout_alignStart="@+id/textView46"
+            android:layout_marginBottom="30dp"
+            android:padding="4dp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload to feed."
+            android:id="@+id/checkBox"
+            android:checked="true"
+            android:textColor="#ffffff"
+            android:layout_above="@+id/textView55"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="12dp" />
+
+        <njdsoftware.app_functional.CustomWidgets.TextButton
+            android:layout_width="120dp"
+            android:layout_height="64dp"
+            android:text="Done"
+            android:id="@+id/button10"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="24dp"
+            android:layout_alignParentBottom="true"
+            android:textSize="18sp" />
+
+        <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1921"
+            android:id="@+id/textView109"
+            android:textSize="96sp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:autoText="false"
+            android:layout_below="@+id/textView46"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time spent at level 10"
+            android:id="@+id/textView110"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:allowUndo="false"
+            android:alpha=".7"
+            android:layout_below="@+id/textView109"
+            android:layout_alignLeft="@+id/textView46"
+            android:layout_alignStart="@+id/textView46"
+            android:layout_marginLeft="24dp" />
+
+        <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7d 11h 13m"
+            android:id="@+id/textView111"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:allowUndo="false"
+            android:layout_below="@+id/textView109"
+            android:layout_toRightOf="@+id/textView110"
+            android:layout_toEndOf="@+id/textView110"
+            android:layout_marginLeft="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="World rank"
+            android:id="@+id/textView112"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:allowUndo="false"
+            android:alpha=".7"
+            android:layout_below="@+id/textView111"
+            android:layout_alignLeft="@+id/textView110"
+            android:layout_alignStart="@+id/textView110"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Friends rank"
+            android:id="@+id/textView113"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:alpha=".7"
+            android:layout_below="@+id/textView114"
+            android:layout_alignLeft="@+id/textView112"
+            android:layout_alignStart="@+id/textView112"
+            android:layout_marginTop="16dp" />
+
+        <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="21,907"
+            android:id="@+id/textView114"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:layout_alignTop="@+id/textView112"
+            android:layout_toRightOf="@+id/textView113"
+            android:layout_toEndOf="@+id/textView113"
+            android:layout_marginLeft="36dp" />
+
+        <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13"
+            android:id="@+id/textView115"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:layout_alignTop="@+id/textView113"
+            android:layout_alignLeft="@+id/textView114"
+            android:layout_alignStart="@+id/textView114" />
+
+        <njdsoftware.app_functional.CustomWidgets.TextButton
+            android:layout_width="108dp"
+            android:layout_height="48dp"
+            android:text="Rankings"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_corners_blue_2dp"
+            android:layout_alignBottom="@+id/textView115"
+            android:layout_toRightOf="@+id/textView55"
+            android:layout_toEndOf="@+id/textView55"
+            android:layout_marginLeft="24dp" />
+
+    </RelativeLayout>
+</FrameLayout>

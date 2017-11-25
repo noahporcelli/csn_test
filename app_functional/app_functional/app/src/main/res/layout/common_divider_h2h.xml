@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingTop="8dp"
+    android:paddingBottom="4dp">
+    <View android:layout_height="1dp" android:layout_width="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:background="#ffffff"
+        android:alpha=".24"
+        android:id="@+id/div_right_line"/>
+    <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/requests_toggle_text"
+        android:layout_toLeftOf="@+id/div_right_line"
+        android:layout_toStartOf="@+id/div_right_line"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:textColor="#ffffff"
+        android:textSize="13sp"
+        android:text="Cycling"
+         />
+    <View android:layout_height="1dp" android:layout_width="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/requests_toggle_text"
+        android:layout_toStartOf="@+id/requests_toggle_text"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:background="#ffffff"
+        android:alpha=".24" />
+</RelativeLayout>

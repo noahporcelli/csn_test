@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:paddingLeft="36dp"
+    android:paddingRight="36dp"
+    android:paddingBottom="16dp"
+    android:background="#212121">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="New level:"
+        android:textSize="13sp"
+
+        android:id="@+id/textView15"
+        android:alpha=".7" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+
+        android:text="Time spent at previous level:"
+        android:textSize="13sp"
+        android:id="@+id/textView16"
+        android:alpha=".7"
+        android:layout_below="@+id/textView15"
+        android:layout_alignLeft="@+id/textView15"
+        android:layout_alignStart="@+id/textView15"
+        android:paddingTop="4dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textColor="#ffffff"
+        android:text="6"
+        android:textSize="13sp"
+        android:id="@+id/textView17"
+        android:layout_toRightOf="@+id/textView16"
+        android:layout_toEndOf="@+id/textView16"
+        android:layout_marginLeft="8dp"
+        android:layout_alignTop="@+id/textView15" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+
+        android:text="2d 00h 55m"
+        android:textSize="13sp"
+        android:id="@+id/textView18"
+        android:layout_alignTop="@+id/textView16"
+        android:layout_toRightOf="@+id/textView16"
+        android:layout_toEndOf="@+id/textView16"
+        android:layout_marginLeft="8dp"
+        android:paddingTop="4dp" />
+
+</RelativeLayout>

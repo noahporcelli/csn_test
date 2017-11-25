@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#fafafa">
+    <njdsoftware.app_functional.CustomWidgets.TextButton
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#2962FF"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Likes + comments"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="24dp"
+        android:id="@+id/view2" />
+    <include
+        layout="@layout/screens_feeds_like_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/view2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/include19" />
+    <include
+        layout="@layout/screens_feeds_add_comment_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/include15" />
+    <include
+        layout="@layout/screens_feeds_comment"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/include15"
+        android:layout_below="@+id/include19" />
+</RelativeLayout>

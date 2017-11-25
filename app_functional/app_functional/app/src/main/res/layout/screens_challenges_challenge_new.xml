@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#212121">
+    <njdsoftware.app_functional.CustomWidgets.TextButton
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#2962FF"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="NEW CHALLENGE"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="24dp"
+        android:id="@+id/view2" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#ffffff"
+        android:id="@+id/relativeLayout37"
+        android:alpha=".95"
+        android:padding="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To:"
+            android:id="@+id/textView87"
+            android:textColor="#000000"
+            android:alpha=".7"
+            android:textSize="14sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_toRightOf="@+id/textView87"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentTop="true">
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="PRESET: Race talk"
+        android:layout_above="@+id/relativeLayout38"
+        android:layout_alignLeft="@+id/relativeLayout38"
+        android:layout_alignStart="@+id/relativeLayout38"
+        android:gravity="left|center_vertical"
+        android:textColor="#000000"
+        android:background="#64B5F6"
+        android:paddingLeft="8dp"
+        android:id="@+id/view10"
+        android:paddingRight="8dp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout39"
+        android:background="#00ff00"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:layout_below="@+id/relativeLayout37"
+        android:layout_alignRight="@+id/relativeLayout37"
+        android:layout_alignEnd="@+id/relativeLayout37"
+        android:layout_marginTop="116dp"
+        android:visibility="gone">
+        <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:text="PRESETS"
+            android:id="@+id/view8"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center_vertical" />
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:id="@+id/imageView6"
+            android:src="@mipmap/ic_dropdown_black"
+            android:layout_toRightOf="@+id/view8"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:id="@+id/relativeLayout38"
+        android:alpha=".95"
+        android:padding="8dp"
+        android:layout_below="@+id/relativeLayout39"
+        android:layout_alignLeft="@+id/relativeLayout37"
+        android:layout_alignStart="@+id/relativeLayout37"
+        android:layout_alignRight="@+id/relativeLayout39"
+        android:layout_alignEnd="@+id/relativeLayout39"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText3"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:inputType="textMultiLine"
+            android:hint="Enter message here."
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:minLines="6"
+            android:gravity="top"
+            android:background="@android:color/transparent"
+            android:text="This is a message." />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11 / 120"
+            android:id="@+id/textView88"
+            android:layout_below="@+id/editText3"
+            android:layout_alignRight="@+id/editText3"
+            android:layout_alignEnd="@+id/editText3"
+            android:textSize="12sp"
+            android:alpha=".54"
+            android:textColor="#000000" />
+
+    </RelativeLayout>
+
+    <njdsoftware.app_functional.CustomWidgets.TextButton
+        android:layout_width="120dp"
+        android:layout_height="64dp"
+        android:text="Discard"
+        android:textSize="18sp"
+        android:layout_below="@+id/relativeLayout38"
+        android:layout_alignLeft="@+id/relativeLayout38"
+        android:layout_alignStart="@+id/relativeLayout38"
+        android:layout_marginTop="16dp"
+        android:id="@+id/view9"
+        android:visibility="gone" />
+
+    <njdsoftware.app_functional.CustomWidgets.TextButton
+        android:layout_width="120dp"
+        android:layout_height="64dp"
+        android:text="Send"
+        android:id="@+id/button10"
+        android:textSize="18sp"
+        android:layout_below="@+id/relativeLayout38"
+        android:layout_alignRight="@+id/relativeLayout38"
+        android:layout_alignEnd="@+id/relativeLayout38"
+        android:layout_marginTop="16dp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/r_l_type"
+        android:layout_below="@+id/relativeLayout37"
+        android:layout_alignLeft="@+id/relativeLayout37"
+        android:layout_alignStart="@+id/relativeLayout37"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+        <TextView
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:text="Max attempts"
+            android:id="@+id/textView25"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:allowUndo="false"
+            android:alpha=".7"
+            android:layout_below="@+id/textView126"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="16dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corners_white_2dp"
+            android:alpha=".95"
+            android:id="@+id/relativeLayout48"
+            android:layout_alignTop="@+id/textView25"
+            android:layout_toRightOf="@+id/textView25"
+            android:layout_toEndOf="@+id/textView25"
+            android:layout_marginLeft="32dp">
+
+            <Spinner
+                android:layout_width="128dp"
+                android:layout_height="27dp"
+                android:id="@+id/spinner4" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:text="Max duration"
+            android:id="@+id/textView125"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:allowUndo="false"
+            android:alpha=".7"
+            android:layout_below="@+id/textView25"
+            android:layout_alignLeft="@+id/textView25"
+            android:layout_alignStart="@+id/textView25"
+            android:layout_marginTop="32dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corners_white_2dp"
+            android:alpha=".95"
+            android:id="@+id/relativeLayout52"
+            android:layout_alignTop="@+id/textView125"
+            android:layout_alignLeft="@+id/relativeLayout48"
+            android:layout_alignStart="@+id/relativeLayout48">
+
+            <Spinner
+                android:layout_width="128dp"
+                android:layout_height="27dp"
+                android:id="@+id/spinner5" />
+        </RelativeLayout>
+
+        <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Challenge type: Time trial"
+            android:id="@+id/textView126"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:allowUndo="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(More coming soon)"
+            android:id="@+id/textView132"
+            android:layout_toRightOf="@+id/textView126"
+            android:layout_toEndOf="@+id/textView126"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:layout_alignBaseline="@+id/textView126"
+            android:layout_marginLeft="8dp"
+            android:textStyle="italic" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/r_l_type"
+        android:layout_alignLeft="@+id/r_l_type"
+        android:layout_alignStart="@+id/r_l_type"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:id="@+id/relativeLayout19">
+
+        <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Route"
+            android:id="@+id/textView126"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:allowUndo="false" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView126"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
+            android:id="@+id/relativeLayout50">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/relativeLayout39"
+                android:background="@drawable/rounded_corners_green_2dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+                <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:text="RECENT"
+                    android:id="@+id/view8"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="left|center_vertical" />
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:id="@+id/imageView6"
+                    android:src="@mipmap/ic_dropdown_black"
+                    android:layout_toRightOf="@+id/view8"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp" />
+
+            </RelativeLayout>
+
+            <njdsoftware.app_functional.CustomWidgets.TextButton
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Select from map"
+                android:id="@+id/button12"
+                android:background="@drawable/rounded_corners_blue_2dp"
+                android:layout_alignTop="@+id/relativeLayout39"
+                android:layout_toRightOf="@+id/relativeLayout39"
+                android:layout_toEndOf="@+id/relativeLayout39"
+                android:layout_marginLeft="32dp"
+                android:textSize="14sp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selected"
+            android:id="@+id/textView127"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:allowUndo="false"
+            android:alpha=".7"
+            android:layout_marginTop="24dp"
+            android:layout_below="@+id/relativeLayout50"
+            android:layout_marginLeft="32dp" />
+
+        <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SLFC Portway GP"
+            android:id="@+id/textView128"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:allowUndo="false"
+            android:layout_marginLeft="32dp"
+            android:layout_alignTop="@+id/textView127"
+            android:layout_toRightOf="@+id/textView127"
+            android:layout_toEndOf="@+id/textView127"
+            android:layout_marginStart="32dp" />
+    </RelativeLayout>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accompanying message."
+        android:id="@+id/checkBox2"
+        android:checked="true"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/relativeLayout19"
+        android:layout_alignLeft="@+id/relativeLayout19"
+        android:layout_alignStart="@+id/relativeLayout19"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:id="@+id/textView129"
+        android:background="#ffffff"
+        android:alpha=".95"
+        android:textColor="#000000"
+        android:hint="Enter message here."
+        android:padding="4dp"
+        android:layout_below="@+id/checkBox2"
+        android:layout_alignLeft="@+id/checkBox2"
+        android:layout_alignStart="@+id/checkBox2"
+        android:layout_marginTop="12dp" />
+
+    <njdsoftware.app_functional.CustomWidgets.TextButton
+        android:layout_width="120dp"
+        android:layout_height="64dp"
+        android:text="Done"
+        android:id="@+id/button10"
+        android:textSize="18sp"
+        android:layout_alignBottom="@+id/textView129"
+        android:layout_alignRight="@+id/relativeLayout37"
+        android:layout_alignEnd="@+id/relativeLayout37"
+        android:layout_marginBottom="-6dp" />
+</RelativeLayout>

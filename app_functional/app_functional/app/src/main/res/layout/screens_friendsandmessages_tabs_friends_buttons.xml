@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:paddingBottom="16dp">
+
+    <njdsoftware.app_functional.CustomWidgets.TextButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textSize="12sp"
+        android:id="@+id/btnMessageFriend"
+        android:text="MESSAGE"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff" />
+    <RelativeLayout
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/btnMessageFriend"
+        android:layout_marginRight="8dp">
+        <njdsoftware.app_functional.CustomWidgets.TextButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:id="@+id/btnChallengeFriend"
+            android:text="CHALLENGE"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/btnMessageFriend"
+        android:layout_marginLeft="8dp">
+        <njdsoftware.app_functional.CustomWidgets.TextButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:id="@+id/btnFriendsMore"
+            android:text="MORE \u25bc"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+</RelativeLayout>

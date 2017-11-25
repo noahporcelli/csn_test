@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#212121">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingTop="12dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="12dp"
+        android:minHeight="72dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_pic_view"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_add_friend"
+            app:civ_fill_color="#F5F5F5"
+            app:civ_border_width="1dp"
+            app:civ_border_color="#FF000000"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UserXYZ"
+            android:id="@+id/user_name_view"
+            android:layout_alignTop="@+id/user_pic_view"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="56dp"
+
+            android:textSize="14sp"
+            android:textColor="#ffffff"
+            android:alpha="1" />
+
+        <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_bio_view"
+            android:layout_below="@+id/user_name_view"
+            android:layout_alignLeft="@+id/user_name_view"
+            android:layout_alignStart="@+id/user_name_view"
+            android:gravity="center_vertical"
+            android:textSize="13sp"
+            android:textColor="#ffffff"
+            android:text="Time trial 1 day 5 attempts"
+            android:layout_marginTop="4dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:paddingLeft="36dp"
+        android:paddingBottom="16dp"
+        android:paddingRight="36dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Route"
+            android:id="@+id/textView141"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:alpha=".7" />
+        <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SLFC Portway GP"
+            android:id="@+id/textView106"
+            android:textColor="#00ff00"
+            android:textSize="13sp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView133"
+            android:layout_toEndOf="@+id/textView133"
+            android:layout_marginLeft="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message"
+            android:id="@+id/textView133"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:alpha=".7"
+            android:layout_below="@+id/textView141"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&quot;I hope you&apos;re not going to pussy out of this one you piece of shit.&quot;"
+            android:id="@+id/textView134"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:layout_alignTop="@+id/textView133"
+            android:layout_alignLeft="@+id/textView106"
+            android:layout_alignStart="@+id/textView106" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffffff"
+        android:alpha="0.5"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_margin="12dp"
+            android:paddingRight="4dp"
+            android:paddingLeft="4dp"
+            android:id="@+id/btnAccept"
+            android:layout_centerInParent="true">
+            <ImageButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:id="@+id/imageButton2"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/tick_message_image"
+                android:background="@null" />
+
+            <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:textColor="#DADADA"
+                android:textSize="12sp"
+                android:text="ACCEPT WITH MESSAGE"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/imageButton2"
+                android:gravity="center"
+                android:layout_marginTop="-3.5dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:paddingRight="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="4dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/btnAccept"
+            android:layout_toStartOf="@+id/btnAccept">
+            <ImageButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:id="@+id/messageButton"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/ic_tick"
+                android:background="@null" />
+
+            <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+                android:layout_width="90dp"
+                android:layout_height="24dp"
+                android:textColor="#DADADA"
+                android:textSize="12sp"
+                android:text="ACCEPT"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/messageButton"
+                android:layout_marginTop="-8dp"
+                android:gravity="center"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:paddingRight="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="4dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnAccept"
+            >
+            <ImageButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:id="@+id/imageButton4"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/ic_remove_friend"
+                android:background="@null" />
+
+            <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+                android:layout_width="90dp"
+                android:layout_height="24dp"
+                android:textColor="#DADADA"
+                android:textSize="12sp"
+                android:text="REJECT"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/imageButton4"
+                android:layout_marginTop="-8dp"
+                android:gravity="center"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

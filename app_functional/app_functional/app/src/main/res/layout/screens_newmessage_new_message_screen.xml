@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#212121">
+    <njdsoftware.app_functional.CustomWidgets.TextButton
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#2962FF"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="NEW MESSAGE"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="24dp"
+        android:id="@+id/view2" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#ffffff"
+        android:layout_margin="16dp"
+        android:id="@+id/relativeLayout37"
+        android:alpha=".95"
+        android:padding="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To:"
+            android:id="@+id/textView87"
+            android:textColor="#000000"
+            android:alpha=".7"
+            android:textSize="14sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_toRightOf="@+id/textView87"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentTop="true">
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="PRESET: Race talk"
+        android:layout_above="@+id/relativeLayout38"
+        android:layout_alignLeft="@+id/relativeLayout38"
+        android:layout_alignStart="@+id/relativeLayout38"
+        android:gravity="left|center_vertical"
+        android:textColor="#000000"
+        android:background="#64B5F6"
+        android:paddingLeft="8dp"
+        android:id="@+id/view10"
+        android:paddingRight="8dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout39"
+        android:background="#00ff00"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:layout_below="@+id/relativeLayout37"
+        android:layout_alignRight="@+id/relativeLayout37"
+        android:layout_alignEnd="@+id/relativeLayout37"
+        android:layout_marginTop="16dp">
+        <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:text="PRESETS"
+            android:id="@+id/view8"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center_vertical" />
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:id="@+id/imageView6"
+            android:src="@mipmap/ic_dropdown_black"
+            android:layout_toRightOf="@+id/view8"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:id="@+id/relativeLayout38"
+        android:alpha=".95"
+        android:padding="8dp"
+        android:layout_below="@+id/relativeLayout39"
+        android:layout_alignLeft="@+id/relativeLayout37"
+        android:layout_alignStart="@+id/relativeLayout37"
+        android:layout_alignRight="@+id/relativeLayout39"
+        android:layout_alignEnd="@+id/relativeLayout39"
+        android:layout_marginBottom="16dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText3"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:inputType="textMultiLine"
+            android:hint="Enter message here."
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:minLines="6"
+            android:gravity="top"
+            android:background="@android:color/transparent"
+            android:text="This is a message." />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11 / 120"
+            android:id="@+id/textView88"
+            android:layout_below="@+id/editText3"
+            android:layout_alignRight="@+id/editText3"
+            android:layout_alignEnd="@+id/editText3"
+            android:textSize="12sp"
+            android:alpha=".54"
+            android:textColor="#000000" />
+
+    </RelativeLayout>
+
+    <njdsoftware.app_functional.CustomWidgets.TextButton
+        android:layout_width="120dp"
+        android:layout_height="64dp"
+        android:text="Discard"
+        android:textSize="18sp"
+        android:layout_below="@+id/relativeLayout38"
+        android:layout_alignLeft="@+id/relativeLayout38"
+        android:layout_alignStart="@+id/relativeLayout38"
+        android:layout_marginTop="16dp"
+        android:id="@+id/view9" />
+
+    <njdsoftware.app_functional.CustomWidgets.TextButton
+        android:layout_width="120dp"
+        android:layout_height="64dp"
+        android:text="Send"
+        android:id="@+id/button10"
+        android:textSize="18sp"
+        android:layout_below="@+id/relativeLayout38"
+        android:layout_alignRight="@+id/relativeLayout38"
+        android:layout_alignEnd="@+id/relativeLayout38"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>

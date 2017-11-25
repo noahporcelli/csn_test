@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:id="@+id/h2h_summary_container">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/stat_info"
+            android:textColor="#000000"
+            android:alpha=".87"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:text=""
+            android:layout_centerHorizontal="true" />
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/stat_info"
+            android:layout_toStartOf="@+id/stat_info">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/h2h_you_view"
+                android:textColor="@color/colorAccentYellow"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:text="You"
+                android:clickable="true"
+                android:background="@drawable/abc_btn_borderless_material"
+                android:minHeight="44dp"
+                android:minWidth="88dp"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:layout_marginTop="-6dp"
+                android:layout_marginBottom="-6dp"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/stat_info"
+            android:layout_toEndOf="@+id/stat_info">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccentYellow"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:text="njdzzx"
+                android:id="@+id/h2h_user_name_view"
+                android:clickable="true"
+                android:background="@drawable/abc_btn_borderless_material"
+                android:minHeight="44dp"
+                android:minWidth="88dp"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:layout_marginTop="-6dp"
+                android:layout_marginBottom="-6dp"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/stat_info"
+            android:textColor="#ffffff"
+            android:alpha=".7"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="Mutual route wins"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/stat_info"
+            android:layout_toStartOf="@+id/stat_info"
+            android:id="@+id/my_mutual_route_wins_view"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="31" />
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/stat_info"
+            android:layout_toEndOf="@+id/stat_info"
+            android:id="@+id/friend_mutual_route_wins_view"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="14" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/stat_info"
+            android:textColor="#ffffff"
+            android:alpha=".7"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="Mutual challenge wins"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/stat_info"
+            android:layout_toStartOf="@+id/stat_info"
+            android:id="@+id/my_challenge_wins_view"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="8" />
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/stat_info"
+            android:layout_toEndOf="@+id/stat_info"
+            android:id="@+id/friend_challenge_wins_view"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="9" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/stat_info"
+            android:textColor="#ffffff"
+            android:alpha=".7"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="Achievements"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/stat_info"
+            android:layout_toStartOf="@+id/stat_info"
+            android:id="@+id/my_achievements_view"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="24" />
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/stat_info"
+            android:layout_toEndOf="@+id/stat_info"
+            android:id="@+id/friend_achievements_view"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="11" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/stat_info"
+            android:textColor="#ffffff"
+            android:alpha=".7"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="Challenge ELO rating"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/stat_info"
+            android:layout_toStartOf="@+id/stat_info"
+            android:id="@+id/my_challenge_elo_view"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="1089" />
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/stat_info"
+            android:layout_toEndOf="@+id/stat_info"
+            android:id="@+id/friend_challenge_elo_view"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="1341" />
+    </RelativeLayout>
+</LinearLayout>
+

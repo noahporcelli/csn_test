@@ -1,0 +1,22 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+        <!--<item name="android:windowBackground">@color/primary_material_dark</item>-->
+         <item name="android:fontFamily">@string/font_fontFamily_medium</item>
+     </style>
+     <style name="counterText">
+         <item name="android:textColor">#000000</item>
+         <item name="android:fontFamily">@string/font_fontFamily_medium</item>
+         <item name="android:textSize">12sp</item>
+     </style>
+     <style name="EditTextTheme" parent="Theme.AppCompat.NoActionBar">
+         <item name="colorControlNormal">#00B0FF</item>
+         <item name="colorControlActivated">#00B0FF</item>
+         <item name="colorControlHighlight">#00B0FF</item>
+     </style>
+     <style name="LightAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+         <item name="colorAccent">@color/colorAccentOrange</item>
+     </style>
+ </resources>

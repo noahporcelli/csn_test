@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="C:\CSN tingz\app_functional\app_functional\app\src\main\assets"><file name="fonts/RussoOne-Regular.ttf" path="C:\CSN tingz\app_functional\app_functional\app\src\main\assets\fonts\RussoOne-Regular.ttf"/></source><source path="C:\CSN tingz\app_functional\app_functional\app\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="C:\CSN tingz\app_functional\app_functional\app\src\debug\assets"/></dataSet></merger>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:id="@+id/imageView10"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/test_blue"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:id="@+id/imageView11"
+        android:layout_below="@+id/imageView10"
+        android:layout_alignLeft="@+id/imageView10"
+        android:layout_alignStart="@+id/imageView10"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/test_green"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:id="@+id/imageView12"
+        android:layout_below="@+id/imageView11"
+        android:layout_alignLeft="@+id/imageView11"
+        android:layout_alignStart="@+id/imageView11"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/test_orange"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:id="@+id/imageView13"
+        android:layout_below="@+id/imageView12"
+        android:layout_alignLeft="@+id/imageView12"
+        android:layout_alignStart="@+id/imageView12"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/test_yellow"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:id="@+id/imageView14"
+        android:layout_below="@+id/imageView13"
+        android:layout_alignLeft="@+id/imageView13"
+        android:layout_alignStart="@+id/imageView13"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/test_turqouise"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:id="@+id/imageView15"
+        android:layout_below="@+id/imageView14"
+        android:layout_alignLeft="@+id/imageView14"
+        android:layout_alignStart="@+id/imageView14"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/test_red"
+        android:visibility="invisible" />
+
+    <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NewText"
+        android:id="@+id/t1"
+        android:layout_alignTop="@+id/imageView10"
+        android:layout_toRightOf="@+id/imageView10"
+        android:layout_toEndOf="@+id/imageView10"
+        android:textColor="#F44336"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp" />
+
+    <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NewText"
+        android:id="@+id/t2"
+        android:textColor="@color/colorAccentOrange"
+        android:layout_below="@+id/t1"
+        android:layout_alignLeft="@+id/t1"
+        android:layout_alignStart="@+id/t1"
+        android:layout_marginTop="48dp"
+        android:layout_marginLeft="24dp" />
+
+    <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NewText"
+        android:id="@+id/t3"
+        android:textColor="@color/colorAccentGreen2"
+        android:layout_below="@+id/t2"
+        android:layout_alignLeft="@+id/t2"
+        android:layout_alignStart="@+id/t2"
+        android:layout_marginTop="24dp" />
+
+    <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NewText"
+        android:id="@+id/t4"
+        android:textColor="@color/colorAccentBlue3"
+        android:layout_below="@+id/t3"
+        android:layout_alignLeft="@+id/t3"
+        android:layout_alignStart="@+id/t3"
+        android:layout_marginTop="24dp" />
+
+    <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NewText"
+        android:id="@+id/t5"
+        android:textColor="#3F51B5"
+        android:layout_below="@+id/t4"
+        android:layout_alignLeft="@+id/t4"
+        android:layout_alignStart="@+id/t4"
+        android:layout_marginTop="24dp" />
+
+    <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NewText"
+        android:id="@+id/t6"
+        android:textColor="#2196F3"
+        android:layout_below="@+id/t5"
+        android:layout_alignLeft="@+id/t5"
+        android:layout_alignStart="@+id/t5"
+        android:layout_marginTop="24dp" />
+
+    <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NewText"
+        android:id="@+id/t7"
+        android:textColor="#03A9F4"
+        android:layout_below="@+id/t6"
+        android:layout_alignLeft="@+id/t6"
+        android:layout_alignStart="@+id/t6"
+        android:layout_marginTop="24dp" />
+
+    <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NewText"
+        android:id="@+id/t8"
+        android:textColor="#00BCD4"
+        android:layout_below="@+id/t7"
+        android:layout_alignLeft="@+id/t7"
+        android:layout_alignStart="@+id/t7"
+        android:layout_marginTop="24dp" />
+
+    <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NewText"
+        android:id="@+id/t9"
+        android:textColor="#009688"
+        android:layout_below="@+id/t8"
+        android:layout_alignLeft="@+id/t8"
+        android:layout_alignStart="@+id/t8"
+        android:layout_marginTop="24dp" />
+
+    <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NewText"
+        android:id="@+id/t10"
+        android:textColor="#B71C1C"
+        android:layout_alignTop="@+id/t1"
+        android:layout_toRightOf="@+id/t1"
+        android:layout_toEndOf="@+id/t1"
+        android:layout_marginLeft="64dp" />
+
+    <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NewText"
+        android:id="@+id/t11"
+        android:textColor="#0d47a1"
+        android:layout_below="@+id/t10"
+        android:layout_alignLeft="@+id/t10"
+        android:layout_alignStart="@+id/t10"
+        android:layout_marginTop="48dp"
+        android:layout_marginLeft="24dp" />
+
+    <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NewText"
+        android:id="@+id/t12"
+        android:textColor="#d50000"
+        android:layout_below="@+id/t11"
+        android:layout_alignLeft="@+id/t11"
+        android:layout_alignStart="@+id/t11"
+        android:layout_marginTop="24dp" />
+
+    <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NewText"
+        android:id="@+id/t13"
+        android:textColor="#2962ff"
+        android:layout_below="@+id/t12"
+        android:layout_alignLeft="@+id/t12"
+        android:layout_alignStart="@+id/t12"
+        android:layout_marginTop="24dp" />
+
+    <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NewText"
+        android:id="@+id/t14"
+        android:textColor="#ef6c00"
+        android:layout_below="@+id/t13"
+        android:layout_alignLeft="@+id/t13"
+        android:layout_alignStart="@+id/t13"
+        android:layout_marginTop="24dp" />
+
+    <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NewText"
+        android:id="@+id/t15"
+        android:textColor="#304ffe"
+        android:layout_below="@+id/t14"
+        android:layout_alignLeft="@+id/t14"
+        android:layout_alignStart="@+id/t14"
+        android:layout_marginTop="24dp" />
+
+    <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NewText"
+        android:id="@+id/t16"
+        android:textColor="#ff6d00"
+        android:layout_below="@+id/t15"
+        android:layout_alignLeft="@+id/t15"
+        android:layout_alignStart="@+id/t15"
+        android:layout_marginTop="24dp" />
+
+    <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NewText"
+        android:id="@+id/t17"
+        android:textColor="#01579b"
+        android:layout_below="@+id/t16"
+        android:layout_alignLeft="@+id/t16"
+        android:layout_alignStart="@+id/t16"
+        android:layout_marginTop="24dp" />
+
+    <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NewText"
+        android:id="@+id/t18"
+        android:textColor="#ff6d00"
+        android:layout_below="@+id/t17"
+        android:layout_alignLeft="@+id/t17"
+        android:layout_alignStart="@+id/t17"
+        android:layout_marginTop="24dp" />
+
+    <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NewText"
+        android:id="@+id/t19"
+        android:textColor="#607D8B"
+        android:layout_below="@+id/t18"
+        android:layout_alignLeft="@+id/t18"
+        android:layout_alignStart="@+id/t18"
+        android:layout_marginTop="24dp" />
+
+    <njdsoftware.app_functional.CustomWidgets.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NewText"
+        android:id="@+id/t20"
+        android:textColor="#000000"
+        android:layout_below="@+id/t19"
+        android:layout_alignLeft="@+id/t19"
+        android:layout_alignStart="@+id/t19"
+        android:layout_marginTop="24dp" />
+    <include layout="@layout/toolbar_csn"
+        android:layout_height="56dp"
+        android:layout_width="match_parent"
+        />
+
+</RelativeLayout>

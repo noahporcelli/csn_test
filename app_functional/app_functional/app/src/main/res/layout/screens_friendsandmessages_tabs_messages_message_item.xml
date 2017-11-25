@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/permanent_section_view"
+        android:padding="16dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_pic_view"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/test_dp"
+            app:civ_border_width="0dp"
+            app:civ_border_color="#FFFFFFFF"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="njdzxx"
+            android:id="@+id/user_name_view"
+            android:layout_alignTop="@+id/user_pic_view"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="56dp"
+
+            android:textSize="14sp"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&quot;Couldn&apos;t be happier. Not at all how i imagined this would turn out. This is a really long message so that it spans mutliple lines so i can see how a multi-line message will look with the button layouts im deciding between.&quot;"
+            android:id="@+id/message_view"
+            android:layout_below="@+id/user_name_view"
+            android:layout_alignLeft="@+id/user_name_view"
+            android:layout_alignStart="@+id/user_name_view"
+
+            android:textSize="13sp"
+            android:textColor="#ffffff"
+            android:alpha="0.7"
+            android:paddingTop="4dp"
+            android:maxLines="2"
+            android:ellipsize="end" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="17:52"
+            android:id="@+id/timestamp_view"
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBaseline="@+id/user_name_view"
+            android:alpha="0.7" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/expandable_section_view">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+            <njdsoftware.app_functional.CustomWidgets.TextButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:id="@+id/btnReply"
+                android:text="REPLY"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="32dp"/>
+
+            <njdsoftware.app_functional.CustomWidgets.TextButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/btnReply"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="32dp"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:id="@+id/btnDeleteMessage"
+                android:text="DELETE" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffffff"
+        android:alpha=".12"
+        android:id="@+id/end_divider_view" />
+
+</LinearLayout>

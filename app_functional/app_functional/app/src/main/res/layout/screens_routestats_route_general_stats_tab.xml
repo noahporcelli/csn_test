@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout24">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ROUTE"
+            android:id="@+id/overall"
+            android:paddingLeft="4dp"
+            android:paddingStart="4dp"
+            android:paddingRight="4dp"
+            android:paddingEnd="4dp"
+            android:layout_marginRight="64dp"
+            android:layout_marginEnd="64dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/overall"
+            android:layout_toStartOf="@+id/overall"/>
+
+        <View
+            android:layout_width="64dp"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+        android:id="@+id/relativeLayout25"
+        android:layout_below="@+id/include6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total attempts"
+            android:id="@+id/textView64"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:alpha=".54" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="112"
+            android:id="@+id/textView66"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:alpha=".87"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <include
+        layout="@layout/common_list_divider_dark"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/relativeLayout25"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/include" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+        android:id="@+id/relativeLayout26"
+        android:layout_below="@+id/include"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fastest time"
+            android:id="@+id/textView67"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:alpha=".54" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="43:24"
+            android:id="@+id/textView68"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:alpha=".87"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <include
+        layout="@layout/common_list_divider_dark"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout26"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/include2" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+        android:id="@+id/relativeLayout27"
+        android:layout_below="@+id/include2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Slowest time"
+            android:id="@+id/textView69"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:alpha=".54" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1:05:32"
+            android:id="@+id/textView70"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:alpha=".87"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <include
+        layout="@layout/common_list_divider_dark"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout27"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/include3" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+        android:id="@+id/relativeLayout28"
+        android:layout_below="@+id/include3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Approximate calories"
+            android:id="@+id/textView71"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:alpha=".54" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1,698"
+            android:id="@+id/textView72"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:alpha=".87"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <include
+        layout="@layout/common_list_divider_dark"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout28"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/include7" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+        android:id="@+id/relativeLayout29"
+        android:layout_below="@+id/relativeLayout24"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:id="@+id/textView73"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:alpha=".54" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SLFC Training Circuit Mach 2"
+            android:id="@+id/textView74"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:alpha=".87"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <include
+        layout="@layout/common_list_divider_dark"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout29"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/include4" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+        android:id="@+id/relativeLayout30"
+        android:layout_below="@+id/include4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Distance"
+            android:id="@+id/textView75"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:alpha=".54" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10.2 km"
+            android:id="@+id/textView76"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:alpha=".87"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <include
+        layout="@layout/common_list_divider_dark"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout30"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/include5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+        android:id="@+id/relativeLayout31"
+        android:layout_below="@+id/include5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Checkpoints"
+            android:id="@+id/textView77"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:alpha=".54" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7"
+            android:id="@+id/textView78"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:alpha=".87"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <include
+        layout="@layout/common_list_divider_dark"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout31"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/include6" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+        android:id="@+id/relativeLayout32"
+        android:layout_below="@+id/include7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Challenges involved in"
+            android:id="@+id/textView79"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:alpha=".54" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="24"
+            android:id="@+id/textView80"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:alpha=".87"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <include
+        layout="@layout/common_list_divider_dark"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout32"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/include8" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+        android:id="@+id/relativeLayout33"
+        android:layout_below="@+id/include8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date created"
+            android:id="@+id/textView81"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:alpha=".54" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="05/08/2016"
+            android:id="@+id/textView82"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:alpha=".87"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <include
+        layout="@layout/common_list_divider_dark"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout33"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/include9" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include9"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout35">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ME"
+            android:id="@+id/overall"
+            android:paddingLeft="4dp"
+            android:paddingStart="4dp"
+            android:paddingRight="4dp"
+            android:paddingEnd="4dp"
+            android:layout_marginRight="64dp"
+            android:layout_marginEnd="64dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/overall"
+            android:layout_toStartOf="@+id/overall"/>
+
+        <View
+            android:layout_width="64dp"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+        android:id="@+id/relativeLayout34"
+        android:layout_below="@+id/relativeLayout35"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My attempts"
+            android:id="@+id/textView83"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:alpha=".54" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18"
+            android:id="@+id/textView84"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:alpha=".87"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <include
+        layout="@layout/common_list_divider_dark"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:id="@+id/include10"
+        android:layout_below="@+id/relativeLayout34"
+        android:layout_alignParentLeft="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+        android:id="@+id/relativeLayout36"
+        android:layout_below="@+id/include10"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personal best"
+            android:id="@+id/textView85"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:alpha=".54" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="58:21"
+            android:id="@+id/textView86"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:alpha=".87"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <include
+        layout="@layout/common_list_divider_dark"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:id="@+id/include11"
+        android:layout_below="@+id/relativeLayout36"
+        android:layout_alignParentLeft="true" />
+
+</RelativeLayout>

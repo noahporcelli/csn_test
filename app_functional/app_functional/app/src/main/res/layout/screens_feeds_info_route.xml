@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:paddingLeft="36dp"
+    android:paddingRight="36dp"
+    android:paddingBottom="16dp"
+    android:paddingTop="4dp"
+    android:background="#212121">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Route"
+        android:id="@+id/textView30"
+        android:textColor="#ffffff"
+        android:textSize="13sp"
+        android:alpha=".7"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Portway Grand Prix"
+        android:id="@+id/textView31"
+        android:textColor="#00ff00"
+        android:textSize="16sp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:alpha=".87"
+        android:layout_toRightOf="@+id/textView21"
+        android:layout_toEndOf="@+id/textView21"
+        android:layout_marginLeft="16dp"
+        android:layout_alignTop="@+id/textView30"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:id="@+id/textView20"
+        android:textColor="#ffffff"
+        android:textSize="13sp"
+        android:alpha=".7"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_below="@+id/textView30"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="World rank"
+        android:id="@+id/textView21"
+        android:textColor="#ffffff"
+        android:textSize="13sp"
+        android:alpha=".7"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_below="@+id/textView20"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="18m 05s"
+        android:id="@+id/textView23"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_alignTop="@+id/textView20"
+        android:layout_alignLeft="@+id/textView31"
+        android:layout_alignStart="@+id/textView31" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="18952"
+        android:id="@+id/textView32"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_alignTop="@+id/textView21"
+        android:layout_alignLeft="@+id/textView23"
+        android:layout_alignStart="@+id/textView23" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:id="@+id/relativeLayout17"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView32">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:id="@+id/textView22"
+            android:alpha=".7"
+            android:text="My time:"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="18m 10s"
+            android:textSize="13sp"
+            android:id="@+id/textView33"
+            android:layout_toRightOf="@+id/textView22"
+            android:layout_toEndOf="@+id/textView22"
+            android:layout_marginLeft="8dp" />
+    </RelativeLayout>
+</RelativeLayout>

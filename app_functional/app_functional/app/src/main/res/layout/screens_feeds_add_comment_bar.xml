@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="52dp"
+    android:background="#fafafa">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView116"
+        android:textColor="#000000"
+        android:alpha=".87"
+        android:textSize="14sp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:hint="Write a comment..." />
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:id="@+id/imageView9"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_send_blue"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true" />
+    <!-- Color used for send blue = #0D47A1 , opacity 80% as standard.-->
+    <View android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="#000000"
+        android:alpha="0.38"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
