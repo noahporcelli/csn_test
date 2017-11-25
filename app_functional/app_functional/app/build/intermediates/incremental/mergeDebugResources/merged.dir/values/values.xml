@@ -58,7 +58,7 @@
     <color name="colorAccentGreen">#00ff00</color>
     <color name="colorAccentGreen2">#00C853</color>
     <color name="colorAccentOrange">#FF5722</color>
-    <color name="colorAccentPurple">#9C27B0</color>
+    <color name="colorAccentPurple">#673AB7</color>
     <color name="colorAccentRed">#D50000</color>
     <color name="colorAccentRed2">#F44336</color>
     <color name="colorAccentTeal">#00BFA5</color>
@@ -116,6 +116,7 @@
     <color name="material_grey_800">#ff424242</color>
     <color name="material_grey_850">#ff303030</color>
     <color name="material_grey_900">#ff212121</color>
+    <color name="primary">#673AB7</color>
     <color name="primary_dark_material_dark">@android:color/black</color>
     <color name="primary_dark_material_light">@color/material_grey_600</color>
     <color name="primary_material_dark">@color/material_grey_900</color>

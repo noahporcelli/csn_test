@@ -3,8 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
+    <!--srghsd-->
 
-    <group android:checkableBehavior="single" android:id="@+id/grp1">
+    <group android:checkableBehavior="single"
+        android:id="@+id/grp1">
         <item
             android:id="@+id/nav_camera"
             android:icon="@drawable/ic_menu_camera"
@@ -25,7 +27,8 @@
     <item
         android:id="@+id/action_cart"
         android:actionLayout="@layout/common_list_divider_dark"/>
-    <group android:id="@+id/grp2" android:checkableBehavior="single">
+    <group android:id="@+id/grp2"
+        android:checkableBehavior="single">
         <item
             android:id="@+id/nav_share"
             android:icon="@drawable/ic_menu_share"
